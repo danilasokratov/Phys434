@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,IE=9,chrome=1"><meta name="generator" content="MATLAB R2019a"><title>Untitled</title><style type="text/css">.rtcContent { padding: 30px; } .S0 { margin: 2px 10px 9px 4px; padding: 0px; line-height: 21px; min-height: 0px; white-space: pre-wrap; color: rgb(0, 0, 0); font-family: Helvetica, Arial, sans-serif; font-style: normal; font-size: 14px; font-weight: normal; text-align: left;  }
+.CodeBlock { background-color: #F7F7F7; margin: 10px 0 10px 0;}
+.S1 { border-left: 1px solid rgb(233, 233, 233); border-right: 1px solid rgb(233, 233, 233); border-top: 1px solid rgb(233, 233, 233); border-bottom: 1px solid rgb(233, 233, 233); border-radius: 4px; padding: 6px 45px 4px 13px; line-height: 17.234001159668px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 14px;  }
+.S2 { margin: 10px 10px 9px 4px; padding: 0px; line-height: 21px; min-height: 0px; white-space: pre-wrap; color: rgb(0, 0, 0); font-family: Helvetica, Arial, sans-serif; font-style: normal; font-size: 14px; font-weight: normal; text-align: left;  }
+.S3 { border-left: 1px solid rgb(233, 233, 233); border-right: 1px solid rgb(233, 233, 233); border-top: 1px solid rgb(233, 233, 233); border-bottom: 0px none rgb(0, 0, 0); border-radius: 4px 4px 0px 0px; padding: 6px 45px 0px 13px; line-height: 17.234001159668px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 14px;  }
+.S4 { border-left: 1px solid rgb(233, 233, 233); border-right: 1px solid rgb(233, 233, 233); border-top: 0px none rgb(0, 0, 0); border-bottom: 1px solid rgb(233, 233, 233); border-radius: 0px; padding: 0px 45px 4px 13px; line-height: 17.234001159668px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 14px;  }
+.S5 { color: rgb(64, 64, 64); padding: 10px 0px 6px 17px; background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box; font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 14px; overflow-x: hidden; line-height: 17.234001159668px;  }
+.embeddedOutputsErrorElement {min-height: 18px; max-height: 250px; overflow: auto;}
+.embeddedOutputsErrorElement.inlineElement {}
+.embeddedOutputsErrorElement.rightPaneElement {}
+.embeddedOutputsWarningElement{min-height: 18px; max-height: 250px; overflow: auto;}
+.embeddedOutputsWarningElement.inlineElement {}
+.embeddedOutputsWarningElement.rightPaneElement {}
+.diagnosticMessage-wrapper {font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 12px;}
+.diagnosticMessage-wrapper.diagnosticMessage-warningType {color: rgb(255,100,0);}
+.diagnosticMessage-wrapper.diagnosticMessage-warningType a {color: rgb(255,100,0); text-decoration: underline;}
+.diagnosticMessage-wrapper.diagnosticMessage-errorType {color: rgb(230,0,0);}
+.diagnosticMessage-wrapper.diagnosticMessage-errorType a {color: rgb(230,0,0); text-decoration: underline;}
+.diagnosticMessage-wrapper .diagnosticMessage-messagePart {white-space: pre-wrap;}
+.diagnosticMessage-wrapper .diagnosticMessage-stackPart {white-space: pre;}
+.embeddedOutputsTextElement,.embeddedOutputsVariableStringElement {white-space: pre; word-wrap: initial; min-height: 18px; max-height: 250px; overflow: auto;}
+.textElement,.rtcDataTipElement .textElement {padding-top: 3px;}
+.embeddedOutputsTextElement.inlineElement,.embeddedOutputsVariableStringElement.inlineElement {}
+.inlineElement .textElement {}
+.embeddedOutputsTextElement.rightPaneElement,.embeddedOutputsVariableStringElement.rightPaneElement {min-height: 16px;}
+.rightPaneElement .textElement {padding-top: 2px; padding-left: 9px;}</style></head><body><div class = rtcContent><div  class = 'S0'><span style=' font-weight: bold; text-decoration: underline;'>Lab 2: Probability, Distributions, and Statistical Questions</span></div><div  class = 'S0'><span style=' font-weight: bold;'>Problem 1</span></div><div  class = 'S0'><span>I will assume that in 1 day, the average cosmic-ray background is 3, and the number of gamma-rays emitted by my sample is 7.1. </span></div><div  class = 'S0'><span style=' font-style: italic;'>A) Show how the probability distribution changes as you integrate for more days.</span></div><div  class = 'S0'><span>First, I want to setup the probability distribution for 1 day.</span></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S1'><span style="white-space: pre;"><span>pDist1day = makedist(</span><span style="color: rgb(160, 32, 240);">"Poisson"</span><span>,</span><span style="color: rgb(160, 32, 240);">"lambda"</span><span>,3);</span></span></div></div></div><div  class = 'S2'><span>Next, I want to account for multiple days, so I will multiply the values of the distribution by N, where N is the number of days.</span></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre;"><span>N = 5; </span><span style="color: rgb(34, 139, 34);">%choice to be specified later on</span></span></div></div><div class="inlineWrapper outputs"><div  class = 'S4'><span style="white-space: pre;"><span>pDistNdays = pDist1day*N;</span></span></div><div  class = 'S5'><div class="inlineElement eoOutputWrapper embeddedOutputsErrorElement" uid="D9ECF478" data-scroll-top="null" data-scroll-left="null" data-width="697" data-height="18" data-hashorizontaloverflow="false" data-testid="output_0" style="max-height: 261px; width: 727px;"><div class="diagnosticMessage-wrapper diagnosticMessage-errorType"><div class="diagnosticMessage-messagePart">Undefined operator '*' for input arguments of type 'prob.PoissonDistribution'.</div><div class="diagnosticMessage-stackPart"></div></div></div></div></div></div></div>
+<br>
+<!-- 
+##### SOURCE BEGIN #####
+%% 
+% *Lab 2: Probability, Distributions, and Statistical Questions*
+% 
+% *Problem 1*
+% 
+% I will assume that in 1 day, the average cosmic-ray background is 3, and the 
+% number of gamma-rays emitted by my sample is 7.1. 
+% 
+% _A) Show how the probability distribution changes as you integrate for more 
+% days._
+% 
+% First, I want to setup the probability distribution for 1 day.
+
+pDist1day = makedist("Poisson","lambda",3);
+%% 
+% Next, I want to account for multiple days, so I will multiply the values of 
+% the distribution by N, where N is the number of days.
+
+N = 5; %choice to be specified later on
+pDistNdays = pDist1day*N;
+##### SOURCE END #####
+--></body></html>
