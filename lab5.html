@@ -1,3 +1,136 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,IE=9,chrome=1"><meta name="generator" content="MATLAB R2019a"><title>Untitled</title><style type="text/css">.rtcContent { padding: 30px; } .CodeBlock { background-color: #F7F7F7; margin: 10px 0 10px 0;}
-.S0 { border-left: 1px solid rgb(233, 233, 233); border-right: 1px solid rgb(233, 233, 233); border-top: 1px solid rgb(233, 233, 233); border-bottom: 1px solid rgb(233, 233, 233); border-radius: 4px; padding: 6px 45px 4px 13px; line-height: 17.234001159668px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 14px;  }</style></head><body><div class = rtcContent><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S0'></div></div></div></div></body></html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,IE=9,chrome=1"><meta name="generator" content="MATLAB R2019a"><title>Untitled</title><style type="text/css">.rtcContent { padding: 30px; } .S0 { margin: 2px 10px 9px 4px; padding: 0px; line-height: 21px; min-height: 0px; white-space: pre-wrap; color: rgb(0, 0, 0); font-family: Helvetica, Arial, sans-serif; font-style: normal; font-size: 14px; font-weight: normal; text-align: left;  }
+.CodeBlock { background-color: #F7F7F7; margin: 10px 0 10px 0;}
+.S1 { border-left: 1px solid rgb(233, 233, 233); border-right: 1px solid rgb(233, 233, 233); border-top: 1px solid rgb(233, 233, 233); border-bottom: 1px solid rgb(233, 233, 233); border-radius: 4px 4px 0px 0px; padding: 6px 45px 4px 13px; line-height: 17.234001159668px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 14px;  }
+.S2 { color: rgb(64, 64, 64); padding: 10px 0px 6px 17px; background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box; font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 14px; overflow-x: hidden; line-height: 17.234001159668px;  }
+.embeddedOutputsErrorElement {min-height: 18px; max-height: 250px; overflow: auto;}
+.embeddedOutputsErrorElement.inlineElement {}
+.embeddedOutputsErrorElement.rightPaneElement {}
+.embeddedOutputsWarningElement{min-height: 18px; max-height: 250px; overflow: auto;}
+.embeddedOutputsWarningElement.inlineElement {}
+.embeddedOutputsWarningElement.rightPaneElement {}
+.diagnosticMessage-wrapper {font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 12px;}
+.diagnosticMessage-wrapper.diagnosticMessage-warningType {color: rgb(255,100,0);}
+.diagnosticMessage-wrapper.diagnosticMessage-warningType a {color: rgb(255,100,0); text-decoration: underline;}
+.diagnosticMessage-wrapper.diagnosticMessage-errorType {color: rgb(230,0,0);}
+.diagnosticMessage-wrapper.diagnosticMessage-errorType a {color: rgb(230,0,0); text-decoration: underline;}
+.diagnosticMessage-wrapper .diagnosticMessage-messagePart {white-space: pre-wrap;}
+.diagnosticMessage-wrapper .diagnosticMessage-stackPart {white-space: pre;}
+.embeddedOutputsTextElement,.embeddedOutputsVariableStringElement {white-space: pre; word-wrap: initial; min-height: 18px; max-height: 250px; overflow: auto;}
+.textElement,.rtcDataTipElement .textElement {padding-top: 3px;}
+.embeddedOutputsTextElement.inlineElement,.embeddedOutputsVariableStringElement.inlineElement {}
+.inlineElement .textElement {}
+.embeddedOutputsTextElement.rightPaneElement,.embeddedOutputsVariableStringElement.rightPaneElement {min-height: 16px;}
+.rightPaneElement .textElement {padding-top: 2px; padding-left: 9px;}
+.S3 { border-left: 1px solid rgb(233, 233, 233); border-right: 1px solid rgb(233, 233, 233); border-top: 1px solid rgb(233, 233, 233); border-bottom: 0px none rgb(0, 0, 0); border-radius: 0px; padding: 6px 45px 0px 13px; line-height: 17.234001159668px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 14px;  }
+.S4 { border-left: 1px solid rgb(233, 233, 233); border-right: 1px solid rgb(233, 233, 233); border-top: 0px none rgb(0, 0, 0); border-bottom: 1px solid rgb(233, 233, 233); border-radius: 0px; padding: 0px 45px 4px 13px; line-height: 17.234001159668px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 14px;  }
+.S5 { border-left: 1px solid rgb(233, 233, 233); border-right: 1px solid rgb(233, 233, 233); border-top: 1px solid rgb(233, 233, 233); border-bottom: 1px solid rgb(233, 233, 233); border-radius: 0px 0px 4px 4px; padding: 6px 45px 4px 13px; line-height: 17.234001159668px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 14px;  }
+.S6 { border-left: 1px solid rgb(233, 233, 233); border-right: 1px solid rgb(233, 233, 233); border-top: 1px solid rgb(233, 233, 233); border-bottom: 0px none rgb(0, 0, 0); border-radius: 4px 4px 0px 0px; padding: 6px 45px 0px 13px; line-height: 17.234001159668px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 14px;  }
+.S7 { border-left: 1px solid rgb(233, 233, 233); border-right: 1px solid rgb(233, 233, 233); border-top: 0px none rgb(0, 0, 0); border-bottom: 1px solid rgb(233, 233, 233); border-radius: 0px 0px 4px 4px; padding: 0px 45px 4px 13px; line-height: 17.234001159668px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 14px;  }
+.S8 { margin: 10px 10px 9px 4px; padding: 0px; line-height: 21px; min-height: 0px; white-space: pre-wrap; color: rgb(0, 0, 0); font-family: Helvetica, Arial, sans-serif; font-style: normal; font-size: 14px; font-weight: normal; text-align: left;  }
+.S9 { border-left: 1px solid rgb(233, 233, 233); border-right: 1px solid rgb(233, 233, 233); border-top: 1px solid rgb(233, 233, 233); border-bottom: 1px solid rgb(233, 233, 233); border-radius: 4px; padding: 6px 45px 4px 13px; line-height: 17.234001159668px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 14px;  }</style></head><body><div class = rtcContent><div  class = 'S0'><span style=' font-weight: bold;'>Lab 5</span></div><div  class = 'S0'><span>My partner and I will be working on Higgs data. I will be doing the data set named 1000/1200.</span></div><div  class = 'S0'><span>First, I need to import the data.</span></div><div class="CodeBlock"><div class="inlineWrapper outputs"><div  class = 'S1'><span style="white-space: pre;"><span>h5disp(</span><span style="color: rgb(160, 32, 240);">"higgs_100000_pt_1000_1200.h5"</span><span>)</span></span></div><div  class = 'S2'><div class="inlineElement eoOutputWrapper embeddedOutputsTextElement" uid="5E7E8E5D" data-scroll-top="null" data-scroll-left="null" data-width="639" data-height="129" data-hashorizontaloverflow="false" data-testid="output_0" style="max-height: 261px; width: 669px; opacity: 1;"><div class="textElement">HDF5 higgs_100000_pt_1000_1200.h5 
+Group '/' 
+    Dataset 'higgs_100000_pt_1000_1200' 
+        Size:  14x100000
+        MaxSize:  14x100000
+        Datatype:   H5T_IEEE_F64LE (double)
+        ChunkSize:  []
+        Filters:  none
+        FillValue:  0.000000</div></div></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre;"><span>higgsData = h5read(</span><span style="color: rgb(160, 32, 240);">"higgs_100000_pt_1000_1200.h5"</span><span>,</span><span style="color: rgb(160, 32, 240);">'/higgs_100000_pt_1000_1200'</span><span>);</span></span></div></div><div class="inlineWrapper outputs"><div  class = 'S4'><span style="white-space: pre;"><span>h5disp(</span><span style="color: rgb(160, 32, 240);">"qcd_100000_pt_1000_1200.h5"</span><span>)</span></span></div><div  class = 'S2'><div class="inlineElement eoOutputWrapper embeddedOutputsTextElement" uid="3F807E16" data-scroll-top="null" data-scroll-left="null" data-width="639" data-height="129" data-hashorizontaloverflow="false" data-testid="output_1" style="max-height: 261px; width: 669px; opacity: 1;"><div class="textElement">HDF5 qcd_100000_pt_1000_1200.h5 
+Group '/' 
+    Dataset 'qcd_100000_pt_1000_1200' 
+        Size:  14x100000
+        MaxSize:  14x100000
+        Datatype:   H5T_IEEE_F64LE (double)
+        ChunkSize:  []
+        Filters:  none
+        FillValue:  0.000000</div></div></div></div><div class="inlineWrapper"><div  class = 'S5'><span style="white-space: pre;"><span>qcdData = h5read(</span><span style="color: rgb(160, 32, 240);">"qcd_100000_pt_1000_1200.h5"</span><span>,</span><span style="color: rgb(160, 32, 240);">'/qcd_100000_pt_1000_1200'</span><span>);</span></span></div></div></div><div  class = 'S0'><span>Sort the data into individual vectors. "h" prefixes are for higgs data, "q" prefixes are for background data.</span></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S6'><span style="white-space: pre;"><span>hPT = higgsData(1,:);</span></span></div></div><div class="inlineWrapper"><div  class = 'S7'><span style="white-space: pre;"><span>qPT = qcdData(1,:);</span></span></div></div></div><div  class = 'S8'><span>PT is the transverse (xy) momentum, given by pt = sqrt(px^2 + py^2), where px and py are the momenta along x and y.</span></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S6'><span style="white-space: pre;"><span>hETA = higgsData(2,:);</span></span></div></div><div class="inlineWrapper"><div  class = 'S7'><span style="white-space: pre;"><span>qETA = qcdData(2,:);</span></span></div></div></div><div  class = 'S8'><span>ETA is the pseudorapidity, given by -ln(tan(ø/2))-0.5ln((abs(p)+pl)/(abs(p)-pl))</span></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S6'><span style="white-space: pre;"><span>hPHI = higgsData(3,:);</span></span></div></div><div class="inlineWrapper"><div  class = 'S7'><span style="white-space: pre;"><span>qPHI = qcdData(3,:);</span></span></div></div></div><div  class = 'S8'><span>PHI is the azimuthal angle, given by arccos(x/r)</span></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S6'><span style="white-space: pre;"><span>hMASS = higgsData(4,:);</span></span></div></div><div class="inlineWrapper"><div  class = 'S7'><span style="white-space: pre;"><span>qMASS = qcdData(4,:);</span></span></div></div></div><div  class = 'S8'><span>MASS is the mass invariant, given by E^2 = p^2 + m^2 (natural units).</span></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S6'><span style="white-space: pre;"><span>hEE2 = higgsData(5,:);</span></span></div></div><div class="inlineWrapper"><div  class = 'S7'><span style="white-space: pre;"><span>qEE2 = qcdData(5,:);</span></span></div></div></div><div  class = 'S8'><span>EE2 is the 2-point ECF ratio, given by sum over i&lt;j in J of (p_t,i * p_t,j * deltaR_ij * 1/(p_t,J)^2)</span></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S6'><span style="white-space: pre;"><span>hEE3 = higgsData(6,:);</span></span></div></div><div class="inlineWrapper"><div  class = 'S7'><span style="white-space: pre;"><span>qEE3 = qcdData(6,:);</span></span></div></div></div><div  class = 'S8'><span>EE3 is the 3-point ECF ratio, given by sum over i&lt;j&lt;k in J of (p_t,i * p_t,j * p_t,k * deltaR_ij * deltaR_ik * deltaR_jk * 1/(p_t,J)^3)</span></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S6'><span style="white-space: pre;"><span>hD2 = higgsData(7,:);</span></span></div></div><div class="inlineWrapper"><div  class = 'S7'><span style="white-space: pre;"><span>qD2 = qcdData(7,:);</span></span></div></div></div><div  class = 'S8'><span>D2 is the 3-to-2 point ECF ratio, given by EE3/(EE2)^3</span></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S6'><span style="white-space: pre;"><span>hANG = higgsData(8,:);</span></span></div></div><div class="inlineWrapper"><div  class = 'S7'><span style="white-space: pre;"><span>qANG = qcdData(8,:);</span></span></div></div></div><div  class = 'S8'><span>ANG is the angularity, given by 1/m_J * sum over i in J of (E_i * cos^3(ø_i) / (sin^2(ø_i)))</span></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S6'><span style="white-space: pre;"><span>hT1 = higgsData(9,:);</span></span></div></div><div class="inlineWrapper"><div  class = 'S7'><span style="white-space: pre;"><span>qT1 = qcdData(9,:);</span></span></div></div></div><div  class = 'S8'><span></span></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S6'><span style="white-space: pre;"><span>hT2 = higgsData(10,:);</span></span></div></div><div class="inlineWrapper"><div  class = 'S7'><span style="white-space: pre;"><span>qT2 = qcdData(10,:);</span></span></div></div></div><div  class = 'S8'><span></span></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S6'><span style="white-space: pre;"><span>hT3 = higgsData(11,:);</span></span></div></div><div class="inlineWrapper"><div  class = 'S7'><span style="white-space: pre;"><span>qT3 = qcdData(11,:);</span></span></div></div></div><div  class = 'S8'><span></span></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S6'><span style="white-space: pre;"><span>hT21 = higgsData(12,:);</span></span></div></div><div class="inlineWrapper"><div  class = 'S7'><span style="white-space: pre;"><span>qT21 = qcdData(12,:);</span></span></div></div></div><div  class = 'S8'><span></span></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S6'><span style="white-space: pre;"><span>hT32 = higgsData(13,:);</span></span></div></div><div class="inlineWrapper"><div  class = 'S7'><span style="white-space: pre;"><span>qT32 = qcdData(13,:);</span></span></div></div></div><div  class = 'S8'><span></span></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S6'><span style="white-space: pre;"><span>hKTDELTAR = higgsData(14,:);</span></span></div></div><div class="inlineWrapper"><div  class = 'S7'><span style="white-space: pre;"><span>qKTDELTAR = qcdData(14,:);</span></span></div></div></div><div  class = 'S8'><span></span></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S9'></div></div></div></div>
+<br>
+<!-- 
+##### SOURCE BEGIN #####
+%% 
+% *Lab 5*
+% 
+% My partner and I will be working on Higgs data. I will be doing the data set 
+% named 1000/1200.
+% 
+% First, I need to import the data.
+
+h5disp("higgs_100000_pt_1000_1200.h5")
+higgsData = h5read("higgs_100000_pt_1000_1200.h5",'/higgs_100000_pt_1000_1200');
+h5disp("qcd_100000_pt_1000_1200.h5")
+qcdData = h5read("qcd_100000_pt_1000_1200.h5",'/qcd_100000_pt_1000_1200');
+%% 
+% Sort the data into individual vectors. "h" prefixes are for higgs data, "q" 
+% prefixes are for background data.
+
+hPT = higgsData(1,:);
+qPT = qcdData(1,:);
+%% 
+% PT is the transverse (xy) momentum, given by pt = sqrt(px^2 + py^2), where 
+% px and py are the momenta along x and y.
+
+hETA = higgsData(2,:);
+qETA = qcdData(2,:);
+%% 
+% ETA is the pseudorapidity, given by -ln(tan(ø/2))-0.5ln((abs(p)+pl)/(abs(p)-pl))
+
+hPHI = higgsData(3,:);
+qPHI = qcdData(3,:);
+%% 
+% PHI is the azimuthal angle, given by arccos(x/r)
+
+hMASS = higgsData(4,:);
+qMASS = qcdData(4,:);
+%% 
+% MASS is the mass invariant, given by E^2 = p^2 + m^2 (natural units).
+
+hEE2 = higgsData(5,:);
+qEE2 = qcdData(5,:);
+%% 
+% EE2 is the 2-point ECF ratio, given by sum over i<j in J of (p_t,i * p_t,j 
+% * deltaR_ij * 1/(p_t,J)^2)
+
+hEE3 = higgsData(6,:);
+qEE3 = qcdData(6,:);
+%% 
+% EE3 is the 3-point ECF ratio, given by sum over i<j<k in J of (p_t,i * p_t,j 
+% * p_t,k * deltaR_ij * deltaR_ik * deltaR_jk * 1/(p_t,J)^3)
+
+hD2 = higgsData(7,:);
+qD2 = qcdData(7,:);
+%% 
+% D2 is the 3-to-2 point ECF ratio, given by EE3/(EE2)^3
+
+hANG = higgsData(8,:);
+qANG = qcdData(8,:);
+%% 
+% ANG is the angularity, given by 1/m_J * sum over i in J of (E_i * cos^3(ø_i) 
+% / (sin^2(ø_i)))
+
+hT1 = higgsData(9,:);
+qT1 = qcdData(9,:);
+%% 
+% 
+hT2 = higgsData(10,:);
+qT2 = qcdData(10,:);
+%% 
+% 
+hT3 = higgsData(11,:);
+qT3 = qcdData(11,:);
+%% 
+% 
+hT21 = higgsData(12,:);
+qT21 = qcdData(12,:);
+%% 
+% 
+hT32 = higgsData(13,:);
+qT32 = qcdData(13,:);
+%% 
+% 
+hKTDELTAR = higgsData(14,:);
+qKTDELTAR = qcdData(14,:);
+%% 
+%
+##### SOURCE END #####
+--></body></html>
